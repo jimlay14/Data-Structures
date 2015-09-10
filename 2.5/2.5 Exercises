@@ -1,0 +1,43 @@
+Self Check
+
+1. The get operation for the single-linked list is O(n). The list has to be iterated through to access an index, 
+instead of directly getting the indexed item as in an arraylist.
+
+2. The set operation for a single-linked list is also O(n). The list has to be iterated through to access an index,
+however, once at the index there is not need to shift items.
+
+3. Each add method is O(1). Although there is a loop to find the proper index, there is no need to shift items.
+
+4.
+int sum = 0;
+Node<Integer> nodeRef = head;
+while(nodeRef != null){
+	int next = nodeRef.data;
+	sum += next;
+	nodeRef = nodeRef.next;
+}
+
+5.
+a) head = new Node<String>("Shakira", head.next); //this replaces Tom with Shakira.
+
+b) Node<String> nodeRef = head.next; //make a temporary reference to Tom
+   nodeRef.next = nodeRef.next.next; //replace Harry with Sam, removing Harry
+ 
+c) Node<String> nodeRef = head;
+   while(nodeRef.next != null)
+    	nodeRef = nodeRef.next;
+   nodeRef.next = new Node<String>("Tamika"); // iterate to the end and add Tamika
+   
+d) Node<String nodeRef = head; //get the head
+   while(nodeRef != null && !nodeRef.data.equals("Harry") //while we are before the end or Harry
+    	nodeRef = nodeRef.next;
+   if(nodeRef != null){ //if we found Harry
+    	nodeRef.data = "Sally"; //replace Harry with Sally
+    	nodeRef.next = new Node<String>("Harry", nodeRef.next.next); //replace the node after Sally with Harry
+    	
+Programming
+
+1. Check
+2. Check
+3. Check
+4. Check

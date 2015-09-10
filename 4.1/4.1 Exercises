@@ -1,0 +1,37 @@
+Exercises
+
+1. Thome, Abreu, Jones, Harris (4); Abreu, Jones, Harris (3; Thome is removed)
+
+2. Dustin, Robin, Debbie, Rich, Philip, Harris (6); Robin, Debbie, Rich, Philip, Harris (5; Dustin is removed)
+
+3. 
+myQueue.offer("Hello"); //add "Hello" to the queue
+myQueue.offer("Bye"); //add "Bye" to the end of the queue
+System.out.println(myQueue.peek()); //print out "Hello" on the console; "Hello" is not removed
+myQueue.remove(); //remove "Hello" from the queue
+myQueue.offer("Welcome"); //add "Welcome to the end of the queue
+if(!myQueue.isEmpty()) //if the queue is not empty
+{
+	System.out.println(myQueue.remove()
+		+ ", new size is " + myQueue.size()); //print out "Bye, new size is 1" and remove "Bye" from queue
+	System.out.println("Item in front is " + myQueue.peek()); 
+	//print out "Item in front is Welcome" without removing Welcome
+}
+
+4.
+while (!names.isEmpty())
+{
+	System.out.println(names.remove());
+}
+
+This statement will print out all of the items in the queue names in order.
+
+5. Using peek instead of remove will create an infinite loop, 
+because the first name in the queue will be printed out endlessly,
+not changing the size of names.
+
+Programming
+
+1. Check
+2. Check
+3. Check

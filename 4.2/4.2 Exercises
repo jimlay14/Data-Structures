@@ -1,0 +1,31 @@
+Exercises
+
+1.  //display all the elements in a queue using just the queue operations
+//post: all items are removed
+public void printQueue(Queue queue)
+{
+	while(!queue.isEmpty())
+	{
+		System.out.println(queue.remove());
+	}
+}
+
+2. s is a Stack of strings, and q is a Queue of strings.
+(a) After the first loop, all the items that were in s are in q. s is empty.
+(b) After the second loop, all the items are returned to s in reverse order. q is empty.
+
+String item; // make a new empty string
+while(!s.empty()) //while there are still items in the Stack
+{
+	item = s.pop(); //get the first item from the stack
+	q.offer(item); //add it to the end of the queue
+}
+while(!q.isEmpty()) //while the queue is not empty
+{
+	item = q.remove(); //get the first item from the queue
+	s.push(item); //push it onto the stack
+}
+
+Programming
+
+1. Check

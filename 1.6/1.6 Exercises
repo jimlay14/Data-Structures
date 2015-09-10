@@ -1,0 +1,46 @@
+Self Check
+
+1.
+Unchecked Exception: error conditions due to programmer error, or serious external conditions, and unrecoverable
+example: ArrayIndexOutOfBoundsException is an exception thrown when accessing an out of bounds item, would normally be programmer error
+
+Checked Exception: normally not due to programmer error, and beyond control of the programmer
+example: FileNotFoundException is an exception for when a file is not able to be found; possibly caused by the file not existing
+
+The key difference between checked and unchecked exceptions is that unchecked exceptions are generally due to programmer error,
+while checked exceptions are usually not due to programmer error. Checked exceptions are beyond programmer control,
+whereas unchecked exceptions can be handled through programming.
+
+2. 
+Error: serious external conditions, and usually not solvable
+example: OutOfMemoryError is an error that can not be handled (no memory to handle exception code)
+
+RuntimeException: errors that can be handled on a case by case basis with defensive programming
+example: IllegalArgumentException is due to an improper argument, but can be handled with a try-catch exception.
+
+The key difference between these two is that an Error is not able to be handled, whereas a RuntimeException can be handled
+
+3. ArithmeticException, IllegalArgumentException, ArrayIndexOutOfBoundsException, and NullPointerException
+
+4. EOFException (attempt to read beyond end of data), FileNotFoundException (inability to find a file)
+
+5. IF a different type of exception were to be thrown in proccessPositiveInteger, that exception would not be caught and handled,
+it would simply throw and then end the program. The stack trace might be printed out, tracing back to the cause of the error.
+
+6. 
+ace & 7.5: the message for Bad Data would be displayed if this was an input (being a String and a Double, respectively)
+-5: this will not throw an exception for getIntValue as -5 is an int. However, this would cause an illegal argument exception if
+this was input for processPositiveInteger.
+
+7. This would be the output stream from the main method using these inputs:
+Enter number of kids:
+ace
+Bad data -- enter an integer
+Enter number of kids:
+7.5
+Bad data -- enter an integer
+Enter number of kids:
+-5
+Invalid negative argument
+int = -5    // I added a line to print out the int value from getIntValue
+

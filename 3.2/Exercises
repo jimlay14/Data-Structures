@@ -1,0 +1,11 @@
+Exercises
+
+1. The palindrome finder currenlty ignores case. 
+You would need to add code so that any spaces in a string are ignored, 
+as well as punctuation marks. the replaceAll and replace methods would help with this.
+
+2. a -> ({[]]})([])
+b -> ({[ *balanced is false as next parenthesis is }, thus no more would be added or removed.
+c -> (()) *EmptyStackException occurs here; balanced is false.
+
+Programming

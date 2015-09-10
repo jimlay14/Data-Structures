@@ -1,0 +1,38 @@
+Self Check
+
+1 & 2.
+        Object o = new String("Hello"); //this creates a new object variable that references a String "Hello"
+//		String s = o; //this causes a compiling error; object o cannot be converted to a String without a downcast
+		String s = (String) o; //correct statement
+		Object p = 25; // this creates a new object that references the int 25
+//		int k = p; //this causes the same compiling error as before; without a downcast to an int, object p cannot be an actual int
+		int k = (int) p; // correct statement
+		Number n = k; // creates a new Number object from the int k; like an upcast
+		
+Programming
+
+1. Check
+2. Check
+3.
+
+@Override
+public boolean equals(Object obj)
+{
+	if(obj == this)
+		return true; // if the same object, return true
+	if(obj == null)
+		return false; //cannot be the same as object is null
+	if(this.getClass() == obj.getClass()) //if comparable objects
+	{
+		Airplane other = (Airplane) obj; //downcast to an airplane
+		return eng.equals(other.engine) &&
+			rud.equals(other.rud) &&
+			wings.equals(other.wings) &&
+			...;
+	}
+	return false;
+}
+
+For this method, equals methods for the Engine, Rudder, and Wing classes should be defined.
+Other equals methods should be defined according to how many different classes an Airplane has
+that are not in the Java Collections Framework (not already defined).

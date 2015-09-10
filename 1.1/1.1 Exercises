@@ -1,0 +1,98 @@
+Self Check
+
+1. The two parts of an ADT are its data (or information) and it's methods (operations). 
+The methods are accessible to a user, but the information cannot be accessed directly.
+A class is one implementation of an ADT, while an ADT can be something other than a class.
+An interface describes an ADT - it is like a contract specifying what methods are available (with descriptions on the methods).
+However, an interface cannot be instantiated, like an ADT can.
+An interface is like a contract, a class implementing an interface is one way of filling out the contract.
+
+ADT - castle with data inside; only way in is through method operations
+Interface - contract for the castle; describes what routes into the castle are available
+Class implementing interface - a specific castle with all the routes in defined by the contract
+
+2. I would say the class String implements the Comparable interface. String has a method called compareTo(String s)
+which allows a user to check if the two strings are the same.
+
+3.
+a. Incorrect; PDGUI p1 = new PDGUI(); //incorrect because of reference to a different class
+b. Incorrect; PDGUI p2 = new PDGUI(); //incorrect because interfaces cannot be instantiated
+c. Incorrect; PDUserInterface p3 = new PDGUI(); or PDUserInterface p4 = new PDConsoleUI(); // same as b, 
+interfaces can reference a class implementing the interface, however
+d. This statement is correct as interfaces can reference a class that implements the interface.
+e. Incorrect; PDGUI p5 = new PDGUI(); /*/ PDUserInterface p6 = p5; // interfaces cannot be instantiated
+f. This statement is correct.
+
+4. An interface specifies and describes what operations an ADT has (like a contract), but it does not perform these operations itself;
+classes that implement the interface (fill out the contract) do.
+
+5. The term interface can be used to describe an interface (with abstract methods and constants), or, it can be used to reference
+objects that implement the interface.
+
+Programming
+
+1.
+
+public interface Resizable
+{
+	/**
+	*Resizes
+	*/
+	void resize();
+}
+
+2. A method of class Person (lastName and firstName fields)
+
+/**
+ *Conditions: first and last names of both people must not be null.
+ *
+ * A method to compare whether this person is before, the same, or after another person lexicographically
+ *@param per The person to compare to.
+ *@return int A value of whether this person is before, the same, or after the other person lexicographically
+ */
+public int compareTo(Person per)
+{
+	if(lastName.equals(per.lastName)) //if the last names of this person and the parameter person are the same
+		return firstName.compareTo(per.firstName); //return 0 if the two are the same, 
+		//less than 0 if this person is less than the other lexicographically, and more than 0 if after
+	else //if not
+		return lastName.compareTo(per.lastName); //return 0 if last name is before the other lexicographically, and more than 0 if not
+		//from the if statement this will not return 0.
+}
+
+3. A method of class Person
+
+/**
+ * Conditions: newLast is not null (probably checked)
+ *
+ *A method to change the last name of a just married person
+ *@param justMarried a statement of whether this person was just married
+ *@param newLast a String of the new last name for this person, if just married.
+ */
+public void changeLastName(boolean justMarried, String newLast)
+{
+	if(justMarried) // if justMarried is true
+		lastName = newLast; //change this person's last name to the new last name
+}
+
+This method could be expanded upon by using another person as a parameter, and changing this person's last name to the parameter last name.
+Another way of improving this would be introduce a boolean data field of male or female, and have that be a part of this method
+(only change last names if female, for example)
+
+4. A method of class ATMBankAmerica implements ATM; with data field pin (type String)
+
+/**
+ * Verifies an ATMBankAmerica user's PIN
+ * @param pin The user's PIN
+ * @return Whether the PIN was verified
+ */
+public boolean verifyPIN(String pin)
+{
+	if(this.pin.compareTo(pin) == 0) //if the pin and the ATMBankAmerica pin are the same (user is in the system)
+		return true; //return true, as the user's pin is verified
+	else
+		return false; // otherwise, the user's pin was not verified
+}
+
+This method could be improved if the ATMBankAmerica had a list of pins from all of its different users, 
+allowing it to verify multiple different pins.

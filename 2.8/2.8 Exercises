@@ -1,0 +1,20 @@
+Self Check
+
+1. We didn't write the hasPrevious method this way because if we did so, the method would throw
+an exception if nextItem was equal to null (it would try to check if a null item had a previous).
+
+2. We must call next or previous before calling remove because the remove method must have an
+object to remove. Because we do not send the index of what we want to remove as a parameter
+to the remove method, we must ensure that there is a last item that was returned so that we can remove it.
+
+3. If we call remove after we call add, we will throw an IllegalStateException, because the add method
+sets the lastItemReturned field to null. This is the same as the Java API for the same method. However,
+the Java API also states that its listIterator.remove() method also throws an unsupported operation exception,
+if this operation is not implemented.
+
+Programming
+
+1.
+2.
+3. Check
+4. Check

@@ -1,0 +1,42 @@
+Self Check
+
+1. Differences:
+ A) An abstract class can declare abstract methods; an actual class cannot
+ B) An abstract class cannot be instantiated, while an actual class can
+ 
+  Similarities:
+ A) Both can define instance variables and methods (object specific; contrast with static methods)
+ B) Both can define constants (static _)
+ C) Both can extend a class
+ D) Both can be declared as variables
+ 
+2. Differences:
+ A) An abstract class can define methods; an interface cannot
+ B) An abstract class can extend other classes; an interface cannot
+ C) An interface can be implemented; an abstract class cannot (nor can a normal class)
+
+  Similarities:
+ A) Neither can be instantiated
+ B) Both can declare abstract methods
+ C) Both can define constants
+ D) Both can be declared as a variable
+ 
+3.
+Number[] nums = new Number[5]; //create a new Number array
+nums[0] = new Integer(35); //put an Integer of value 35 into the first spot of the array
+nums[1] = new Double(3.45); //put a double of value 3.45 into the second spot of the array
+nums[4] = new Double("2.45e6"); //in the last spot of the array, put a double of value "2.45e6"
+double x = 0; //declare temporary variable x as a double
+for(int i = 0; i < nums.length; i++) // for each item in the array
+{
+	if(nums[i] != null) // if this spot in the array is not null
+		x += nums[i].doubleValue(); // add double value of the Number to x; making x the sum of each Number's double value
+}
+
+4. The purpose of the if statement in this loop is to prevent the doubleValue() call from being called on a null spot.
+Not every spot in the array is filled; if a null value were to try and call the method, a NullPointerException would occur.
+
+Programming
+
+1. Check
+2. Check

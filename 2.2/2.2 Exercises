@@ -1,0 +1,13 @@
+Self Check
+
+1.
+ArrayList<Double> myList = new ArrayList<Double>(); // create a new ArrayList of Doubles
+myList.add(3.456); // add a double of 3.456 to the front of the ArrayList
+myList.add(5.0); // add a double of 5.0 as the second element of the ArrayList
+double result = myList.get(0) + myList.get(1); // add 3.456 and 5.0
+System.out.println("Result is " + result); // prints out "Result is 8.456"
+
+Programming
+
+1. Check
+2. Check

@@ -1,0 +1,60 @@
+Self Check
+
+1.	int indexOfSam = myList.indexOf("Sam"); //get the index of Sam
+	ListIterator<String> iteratorToSam = myList.listIterator(indexOfSam); //begin a list iterator before Sam
+	iteratorToSam.prev(); //get the item before Sam
+	iteratorToSam.remove(); //remove the item before Sam
+	
+2. If we change the statement to iteratorToSam.next(); then the statement series will remove Sam
+
+3. If we omit this statement, the series of statements will throw an IllegalStateException
+
+Programming
+
+1.
+public int indexOf(E target)
+{
+	ListIterator<String> myIter = myList.listIterator();
+	int index = 0;
+	while(myIter.hasNext && index < size)
+	{
+		if(target.equals(myIter.next()))
+			return index;
+		index++;
+	}
+	return -1;
+}
+
+2.
+public int lastIndexOf(E target)
+{
+	ListIterator<String> myIter = myList.listIterator(size-1);
+	int index = size-1;
+	while(myIter.hasPrevious && index > 0)
+	{
+		if(target.equals(myIter.previous()))
+			return index;
+			index--;
+	}
+	return -1;
+}
+
+3.
+
+public int indexOfMin()
+{
+	if(head == null;)
+		//throw an exception here
+	ListIterator<String> myIter = myList.listIterator();
+	Node<E> ptr = head;
+	index = 0;
+	count = 0;
+	while(myIter.hasNext && index < size)
+	{
+		if(ptr.getData().compareTo(myIter.next.getData()) < 0){//if the current min index is greater than another node's data
+			index = count;//update the index
+		}
+		count++;
+	}
+	return index;
+}

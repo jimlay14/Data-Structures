@@ -1,0 +1,30 @@
+Self Check
+
+1. See Tester main method
+
+2. T(n) = n^3 - 5n^2 + 20n - 10
+cn^3 = n^3 - 5n^2 + 20n - 10
+c = 1 - 5/n0 + 20/n0^2 - 10/n0^3
+c = 6; n0 = 1
+ex. 6(2^2) = 24; T(2) = 18
+
+3.
+O(f(n)		|		f(2000)		|		f(4000)		|		f(8000)		|		f(4000)/f(2000)		|		f(8000)/f(4000)
+O(log n)	|		3.30*		|		3.60*		|		3.90*		|			1.09*			|			1.08*
+O(n) 		|		2000		|		4000		|		8000		|			2				|			2
+O(n log n)	|		6600*		|		14400*		|		31200*		|			2.18*			|			2.17*
+O(n^2)		|		4 * 10^6	|		16 * 10^6	|		64 * 10^6	|			4				|			4
+O(n^3)		|		8 * 10^9	|	   6.4 * 10^10  |	5.12 * 10^11	|			8				|			8
+
+4.
+O(f(n)		|		n = 20		|		n = 40		
+O(log n)	|		~2000		|		~2500		
+O(n) 		|		~2250		|		~4300		
+O(n log n)	|		~2500		|		~5500		
+O(n^2)		|		~2250		|		~8000
+O(n^3)		|		~4000		|	   	>15,000
+
+Programming
+
+1. The results of this exercise do not surprise me: y2 is a quadratic expression, and so it is natural that it would surpass
+y1. See tester for the program.  

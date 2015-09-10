@@ -1,0 +1,46 @@
+Self Check
+
+1. a) its data and the next node
+b) its data, the previous node, and the next node
+c) the previous node
+d) the node you want to remove
+
+2.
+a)	Node<String> nodeRef = tail.prev; //reference to Harry
+	nodeRef.prev.next = tail; //Dick references Sam as next
+	tail.prev = nodeRef.prev; //Sam references Dick as previous, removing Harry
+	
+b)	Node<String> nodeRef = head; //reference to Tom
+	head = new Node<String>("Tamika"); //replace head reference with Tamika, but do not replace reference to the rest of the list
+	head.next = nodeRef; //have Tamika reference Tom as next
+	nodeRef.prev = head; //have Tom reference Tamika as previous, adding Tamika to the front.
+	
+c)	Node<String> nodeRef = new Node<String>("Shakira"); //create a new node reference to Shakira
+	nodeRef.prev = head; //Shakira's previous is Tom
+	nodeRef.next = head.next; //Shakira's next is Tom's next
+	head.next.prev = nodeRef; //have Tom's next reference Shakira as previous
+	head.next = nodeRef; //have Tom reference Shakira as next, inserting Shakira after Tom.
+	
+Programming
+
+1.
+a)	Node<String> nodeRef = new Node<String>("Bill");
+	nodeRef.next = head;
+	nodeRef.prev = tail;
+	tail.next = nodeRef;
+	head.prev = nodeRef;
+	head = nodeRef;
+	
+b)	Node<String> nodeRef = new Node<String>("Sue");
+	nodeRef.next = tail;
+	nodeRef.prev = tail.prev;
+	tail.prev.next = nodeRef;
+	tail.prev = nodeRef;
+	
+c)	tail.next = head.next;
+	head.next.prev = tail;
+	head = head.next;
+	
+d)	tail.prev.next = head;
+	tail.next.prev = tail.prev;
+	tail = tail.prev;

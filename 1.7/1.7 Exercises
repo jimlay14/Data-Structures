@@ -1,0 +1,36 @@
+Self Check
+
+1.
+
+package pack1;
+public class Class1
+{
+	private int v1;
+	protected int v2;
+	int v3;
+	public int v4;
+}
+
+package pack1;
+public class Class2{...}
+
+package pack2;
+public class Class3 extends pack1.Class1{...}
+
+package pack2;
+public class Class4{...}
+
+a. In order for the variables declared in pack1.Class1 to be visible in pack1.Class2, pack1.Class1's variables must not be private.
+As long as the variables are not private, they are accessible to other classes in the package.
+
+b. In order for the variables declared in pack1.Class1 to be visible in pack2.Class3, pack1.Class1's variables must be either protected
+or public visibility. Private variables are not visible outside of the class they are declared in, and package visible variables are
+not visible outside of the package they are declared in (Class 3 is not in the same package). Protected visibility allows visibility
+to subclasses, and Class3 is a subclass of Class1.
+
+c. Variables in pack1.Class1 must have public visibility to be visible in pack2.Class4. Only public visibility allows classes
+outside of the package to have access to variables in the package (if the Class looking for visibility is not a subclass).
+
+Syntax for package declaration:
+
+package packageName;

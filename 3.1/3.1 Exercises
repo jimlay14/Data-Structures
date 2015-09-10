@@ -1,0 +1,14 @@
+Exercises
+
+1. names.push("Jane");  --> put "Jane" on top of the stack
+names.push("Joseph");   --> put "Joseph" on top of the stack
+String top = names.pop(); -> create a new string (referenced by top) that holds "Joseph" (Joseph is removed from the stack)
+String nextTop = names.peek(); -> create a new string (referenced by nextTop) that holds "Jane" (Jane is not removed from the stack)
+
+2.This code would print out the stack in the order "Philip", "Dustin", ..."Rich" and empty the stack.
+
+3. Changing the code to peek would make it so that the stack would not be emptied.
+
+Programming
+
+1, 2, and 3: check

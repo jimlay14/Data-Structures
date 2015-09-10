@@ -1,0 +1,43 @@
+ Self-Check
+ 
+ 1.a) 13, {13,2}, 26, {26,5}, 5, {5,6}, 
+ {5,6,2}, {5,6,2,5}, {5,6,10}, {5,-4}, 1
+ 
+ 1.b) 5, {5,4}, 20, {20,6}, {20,6,7},
+ {20,13}, {20,13,4}, {20,13,4,2},
+ {20,13,2}, {20,11}, 220
+ 
+ 2.a) y, {y :-}, {y 7 :-}, {y 7 :/,-},
+ {y 7 35:/,-}, {y 7 35 / - :+},
+ {y 7 35 / - 4 :+}, {y 7 35 / - 4 :*+},
+ {y 7 35 / - 4 6 :*+}, {y 7 35 / - 4 6 * + :-},
+ {y 7 35 / - 4 6 * + 10 :-}, {y 7 35 / - 4 6 * + 10 -}
+ 
+ 2.b)  {:(}, {x :(}, {x :+(}, {x 15 :+(},
+ {x 15 + }, {x 15 + :*}, {x 15 + :(*},
+ {x 15 + 3 :(*}, {x 15 + 3 :*(*},
+ {x 15 + 3 :(*(*}, {x 15 + 3 4 :(*(*},
+ {x 15 + 3 4 :-(*(*}, {x 15 + 3 4 :(-(*(*},
+ {x 15 + 3 4 5 :(-(*(*}, {x 15 + 3 4 5 :+(-(*(*},
+ {x 15 + 3 4 5 7 :+(-(*(*}, {x 15 + 3 4 5 7 :/+(-(*(*},
+ {x 15 + 3 4 5 7 2 :/+(-(*(*}, {x 15 + 3 4 5 7 2 / + :-(*(*},
+ {x 15 + 3 4 5 7 2 / + - :*(*}, 
+ InfixToPostfixParens.SyntaxErrorException: "Unmatched opening parenthesis"
+ 
+ Programming
+ 
+ 1. Check
+ 
+ 2. Check; change for each loop to a simple for loop (for InfixToPostfix to have no errors),
+  or start lastOperand boolean as false (for InfixToPostFix; 
+ throws error if only a single operator is used as an argument).
+ 
+ For InfixToPostfixParens, this modification is more complicated
+ because 1) Parentheses are classified as operators but can be adjacent
+ 2) Parentheses can start an expression, and
+ 3) The convert method of this class uses a scanner.
+ However, we can still throw an error only if there are two adjacent
+ operands with relative ease. We could also solve the scanner issue
+ by adding a new String variable outside of the while loop that is
+ updated at the end of the loop, so that the last item can be checked
+ to see if it is a parenthesis or not.

@@ -1,0 +1,14 @@
+Self Check
+
+1. Shape cannot be an actual class because there is no shape that is named a "Shape".
+A shape is an abstract idea encompassing multiple different figures (such as rectangles and squares),
+but it is not itself a an actual thing, and thus it is an abstract class; an idea.
+
+2. A shape cannot be an interface because it needs both the variable of the shape name and the non-abstract method toString override.
+In addition, as an abstract class we are able to give the Shape class a constructor, allowing the actual shapes to call
+the super's constructor.
+
+Programming
+
+1. Check
+2. Check

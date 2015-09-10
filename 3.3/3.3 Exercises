@@ -1,0 +1,23 @@
+Exercises
+
+1. s.push('i') : H,a,p,p,y,i + topOfStack = 5
+s.push('s') : H,a,p,p,y,i,s + topOfStack = 6
+char ch1 = s.pop() : H,a,p,p,y,i + topOfStack = 5 (ch1 = 's')
+s.pop() : H,a,p,p,y + topOfStack = 4
+s.push(' ') : H,a,p,p,y,' ' + topOfStack = 5
+char ch2 = s.peek() : same as last line (ch2 = ' ')
+
+2. If the initial capacity were 5 instead of 7, 
+the underlying array would reallocate when 'i' is pushed on the stack.
+
+3. s.push('i') : i,y,,p,p,a,H + topOfStack = 'i'
+s.push('s') : s,i,y,p,p,a,H + topOfStack = 's'
+char ch1 = s.pop() : i,y,p,p,a,H + topOfStack = 'i' (ch1 = 's')
+s.pop() : y,p,p,a,H + topOfStack = 'y'
+s.push(' ') : ' ',y,p,p,a,H + topOfStack = ' '
+char ch2 = s.peek() : same as last line (ch2 = ' ') 
+
+Programming
+
+1. Check
+2. Check

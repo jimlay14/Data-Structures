@@ -1,0 +1,39 @@
+Self Check
+
+1.super(man, proc, ram, disk, procSpeed); // this calls the parent class's constructor with 5 properties specified
+//as the Computer class has no superclass, this would only be a Notebook class statement
+this(man, proc, ram, disk, procSpeed); //this calls the constructor of this class with 5 properties specified
+//this could be in either the Notebook or the Computer class
+
+2.
+ Computer() //allowed; a constructor that allows either a Computer or a Notebook to be instantiated (allowed in Computer class)
+ Notebook() //allowed; a constructor that allows a Notebook to be instantiated (allowed in Notebook class)
+ int toString() //not allowed; a toString() signature means that a String will be returned (not compatible with Object class)
+ double getRamSize() //allowed; allowed in both classes (although simpler to just put in Computer class)
+ String getRamSize() //allowed; would just convert the ramSize to a string (but only in Computer class; cannot have this in Notebook if
+ //the double getRamSize() is in Computer as that would not be compatible
+ String getRamSize(String) //allowed; either can have this as this signature is not already in either class
+ String getProcessor(); //allowed in Computer; not in Notebook unless computer has this method
+ double getScreenSize(); //allowed; only in Notebook as Computers do not have screens
+ 
+ 3.
+ 
+ Computer comp[] = new Computer[3];
+ comp[0] = new Computer("Ace", "AMD", 3, 160, 2.4);
+ comp[1] = new Notebook("Dell", "Intel", 4, 350, 2.2, 15.5, 7.5);
+ comp[2] = comp[1];
+ //for each computer, print out the Ram size (Computer method), then print out all of the computer's specifics dependent on type
+ for(int i = 0; i < comp.length; i++)
+ {
+ 	System.out.println(comp[i].getRamSize() + "\n" +
+ 					   comp[i].toString());
+ }
+ 
+ 4. Java determines which toString to execute at run time. During compile time, the compiler can't determine 
+ what type each spot in the array will reference, but at run time each object in the array can call the right toString method.
+ 
+ Programming
+ 
+ 1. Check
+ 2. Check
+ 3. Check
