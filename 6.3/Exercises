@@ -1,0 +1,77 @@
+Self-Check
+
+1. Done by hand (check)
+
+2.			 (30)
+	  (15) 	 		(35)
+   (4)   (20)    (32)  (38) 
+	  (18)
+	     (19)
+------------------------------
+3. This tree is neither full (nodes with one child) perfect (not 2^5 -1 nodes) nor complete (nodes to the left). It has a height of 5.
+
+4. Left Tree:
+
+7
+  1
+    0
+      null
+      null
+    3
+      2
+        null
+        null
+      5
+        4
+          null
+          null
+        6
+  11
+    9
+      8
+        null
+        null
+      10
+        null
+    12
+      null
+      null
+-----------------------------
+Middle Tree:
+
+3
+  1
+    0
+      null
+      null
+    2
+      null
+      null
+  5
+    4
+      null
+      null
+    6
+      null
+-----------------------------
+Right Tree:
+
+3
+  1
+    0
+      null
+      null
+    2
+      null
+      null
+  5
+    4
+      null
+      null
+    null
+    
+Programming
+
+1. Check
+2. Check
+3. Check

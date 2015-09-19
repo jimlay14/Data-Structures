@@ -1,0 +1,122 @@
+Exercises - 6.1
+
+1.a.			    (-)
+			(+)		       (*)
+		(/)		(a)		(b)	  (c)
+	(x)		(y)
+---------------------------------------
+b.					 (/)
+	  		 (-)			(*)
+		(*)		 (y)	(b)		(+)
+	(x)		(a)				 (c)   (d)
+---------------------------------------	
+c.  		(/)
+	  (+)			(d)
+   (x)	 (*)
+   	  (a)	(-)
+		 (b)   (c)
+---------------------------------------
+2.a. "scissors cuts paper" =
+	00110000001100011001110010010001111100000000011101001111110000110101000010100010
+	   s    c   i   s   s   o   r   s  _    c    u   t   s  _     p   a     p  e   r
+
+b.  "1100010001010001001011101100011111110001101010111101101001" =
+	      w   h  e   r  e  _   i   s  _     w   a    l    d   o
+---------------------------------------
+3. [left tree]
+	height: 3
+	full? no; one node has only one child
+	complete? yes; up through level 2 the tree is complete
+	binary search tree? no; there is a root node for which the left subtree has greater value than itself
+	   made as a BST:
+		 (40)
+	 (32)    (55)
+ (30)
+ 
+   [right tree]
+   height: 3
+   full? n; one node has only one child
+   complete? yes; up through level 2 the tree is complete
+   binary search tree? no; there is a root node for which the left subtree has greater value than itself
+	   made as a BST:
+		    (40)
+	 (32)          (55)
+ (30)   (35)   (50)  
+ --------------------------------------
+ 4. [6.2] 6.2 is not full as there is a node with only one child. As 6.2 is not full, it cannot be perfect either. 6.2 is complete however.
+	[6.3] 6.3 is full with its subtrees indicated. 6.3 is not perfect as it does not have 2^4 - 1 (15) nodes. 6.3 is complete however.
+	[6.4] 6.4 is full as all nodes have 0 or 2 children. 6.4 is not perfect as it does not have 2^4 - 1 (15) nodes. 6.4 is not complete as all trailing nodes are not on the left.
+	[6.5] 6.5 is full as all nodes have 0 or 2 children. 6.5 is not perfect as it does not have 2^11 - 1 nodes. 6.5 has trailing nodes not on the left, and so it is also not complete.
+---------------------------------------
+5.						[Programs]
+	[Microsoft Office]					[Plugins]
+[Office]	  [Templates]		 [Netscape]
+							[Chrome]	[Cool]
+---------------------------------------
+---------------------------------------
+6.2 Exercises
+
+1. Left tree:
+	[inorder] = 32, 30, 40, 55
+	[preorder] = 40, 30, 32, 55
+	[postorder] = 32, 30, 55, 40
+	
+   Right tree:
+   	[inorder] = 32, 30, 35, 40, 50, 55
+   	[preorder] = 40, 30, 32, 35, 55, 50
+   	[postorder] = 32, 35, 30, 50, 55, 40
+----------------------------------------  	
+2. Left tree:
+	[inorder] = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+	[preorder] = 7, 1, 0, 3, 2, 5, 4, 6, 11, 9, 8, 10, 12
+	[postorder = 0, 2, 4, 6, 5, 3, 1, 8, 10, 9, 12, 11, 7
+	
+   Middle tree:
+	[inorder] = 0, 1, 2, 3, 4, 5, 6
+	[preorder] = 3, 1, 0, 2, 5, 4, 6
+	[postorder = 0, 2, 1, 4, 6, 5, 3
+ 
+   Right tree:
+   	[inorder] = 0, 1, 2, 3, 4, 5
+	[preorder] = 3, 1, 0, 2, 5, 4
+	[postorder = 0, 2, 1, 4, 5, 3
+----------------------------------------
+3.a.		  (+)
+		(/)		    (*)
+	 (x)  (y)     (3)  (/)
+					 (b) (c)
+----------------------------------------
+b.			   (-)
+		(x)			(/)
+			   (+)		 (*)
+			 (y) (z)   (-)  (c)
+				     (a) (b)
+----------------------------------------
+c.			     (*)
+         (+)           (/)
+      (a)   (-)      (c) (d)
+         (x)   (y)
+----------------------------------------
+4. The statement is needed in order to ensure that the order of operations was appropriate.
+Without the statement, we might evaluate ((x/y)+3))*(b/c) instead of (x/y)+(3*(b/c)) as order of operations establishes.
+Alternatively, the statement may be just ensure that the student does not make a tree with children only on one or the other side,
+for example:   (*)
+			     (+)
+			       (a)
+			         ...
+Satisfies c, but does not represent the Java meaning of the expression.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

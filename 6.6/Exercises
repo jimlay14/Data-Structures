@@ -1,0 +1,72 @@
+Self-Check
+
+1. a: 1010
+   j: 1100001011
+   l: 10111
+   s: 0011
+   t: 1101
+   v: 1100000
+-------------------------------------------
+2. call 1: symbol is null -
+   -add 0 to code; call 2: print "e: 0"
+   -add 1 to code; call 3: symbol is null -
+   --add 0 to code; call 4: print "a: 10"
+   --add 1 to code; call 5: symbol is null -
+   ---add 0 to code; call 6: print "d: 110"
+   ---add 1 to code; call 7: symbol is null -
+   ---add 0 to code; call 8: print "b: 1110"
+   ---add 1 to code; call 9: print "c: 1111"
+
+Result:
+e: 0
+a: 10
+d: 110
+b: 1110
+c: 1111
+-------------------------------------------
+3. decode {
+      currentTree = huffTree
+      i = 0; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 1; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 2; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 3; currentTree -> currentTree.leftSubtree; currentTree is a leaf; append 'b'; currentTree -> huffTree
+      i = 4; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 5; currentTree -> currentTree.leftSubtree; currentTree is a leaf; append 'a'; currentTree -> huffTree
+      i = 6; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 7; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 8; currentTree -> currentTree.leftSubtree; currentTree is a leaf; append 'd'; currentTree -> huffTree
+      i = 9; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 10; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 11; currentTree -> currentTree.leftSubtree; currentTree is a leaf; append 'd'; currentTree -> huffTree
+      i = 12; currentTree -> currentTree.leftSubtree; currentTree is a leaf; append 'e'; currentTree -> huffTree
+      i = 13; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 14; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 15; currentTree -> currentTree.rightSubtree; currentTree is not leaf
+      i = 16; currentTree -> currentTree.rightSubtree; currentTree is a leaf; append 'c'; currentTree -> huffTree
+      return result: baddec
+   }
+
+4. [ 5,% |  10,/ |  25,- |  30,+ | 50,* ]
+         ------>
+   [ 25,- | 15 (5,% |  10,/ |) | 30,+ | 50,* ]
+         ------>
+   [ 30,+ | 40 {15 (5,% |  10,/ |) | 30,+} | 50,* ]
+         ------>
+   [ 50,* | 70 \ 30,+ | 40 {15 (5,% |  10,/ |) | 30,+}\ ]
+         ------>
+   120 [ 50,* | 70 \ 30,+ | 40 {15 (5,% |  10,/ |) | 30,+}\ ]
+   
+   Or, as printed from the huffman tree:
+   
+   *: 0
+   +: 10
+   %: 1100
+   /: 1101
+   -: 111
+-------------------------------------------
+5. If all symbols in the alphabet had equal frequency, then they would all be placed on as close to the same depth as possible.
+
+Programming
+
+1. Instructions unclear in regards to the use of "code," the second argument.
+	   

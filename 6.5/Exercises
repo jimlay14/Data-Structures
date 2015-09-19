@@ -1,0 +1,32 @@
+Self-Check
+
+1. First heap:			  (built)
+					(is)	      (house)
+			  (this)  (that)   (the)  (jack)
+--------------------------------------------
+   Second heap:           (built)
+				 (house)	       (jack)
+			  (is)   (that)     (the)  (this)
+--------------------------------------------
+2. In the original order, this is the array made: [built, is, house, this, that, the, jack]
+
+In the second order, this is the array made: [built, house, jack, is, that, the, this]
+--------------------------------------------
+3. Figure 6.26 with 18 removed would look like this:
+
+				(8)
+		(20)			(29)
+	(26)     (28)	 (39)  (66)
+ (37) (32) (76)	  (74) (89)
+ 
+ In array form, this looks like: [8, 20, 29, 26, 28, 39, 66, 37, 32, 76, 74, 89]
+--------------------------------------------
+4. The array that would result from building this max heap would be:
+   [90, 82, 55, 33, 25, 10, 47, 15, 18]
+--------------------------------------------
+5.  The printer queue afer receiving these documents would be:
+    [271.6 (Document 3), 297.4 (Document 4), 424.8 (Document 1), 629.8 (Document 2)]
+    
+Programming
+
+1. Check

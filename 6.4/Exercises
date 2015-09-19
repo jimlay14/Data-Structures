@@ -1,0 +1,37 @@
+Self-Check
+
+1.a.  		  (happy)										(ecstatic)
+	(depressed)      (manic)				=>						(depressed)
+		(ecstatic)			(sad)											(manic)
+																	   (happy)	  (sad)
+---------------------------------
+b.				(45)											  (90)
+		(30)			(50)								  (30)
+	(15)					(60)			=>			 (15)	     (50)
+		(20)					(9)						   (20)	  (45)	(60)
+			(25)											 (25)
+---------------------------------
+2. If "mother" were added, the node containing "morn" would have it as a right child, and the height would stay the same
+   If "jane" was added, the node containing "kept" would have it as a left child, and the height would stay the same
+---------------------------------
+3. If "kept" is removed, the node containing "killed" would have no left child.
+   When "cow" is removed, it is replaced by the inorder predecessor "corn"
+
+4. "corn" is the rightmost child of the left subtree.
+   "crowed", the leftmost child of the right subtree, would also be an acceptable replacement.
+---------------------------------
+5. We do not explicitly look for this case because it is covered if there is no left child.
+   A null value is an acceptable replacement for the parent node.
+   
+6. This is not a concern because we are only replacing the DATA of the node, not the REFERENCES to its children.
+---------------------------------
+Programming
+
+1. Check
+2. Check
+3. Check (close enough at the moment)
+   
+
+
+
+
