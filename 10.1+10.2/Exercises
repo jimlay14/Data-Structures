@@ -1,0 +1,29 @@
+---------------------------------
+10.1
+
+1. In Figure 10.1, vertices A and E are adjacent to D. In Figure 10.3, only node E is adjacent to D.
+
+2. In Figure 10.3, vertices B, D, E have a directed edge leading to A, so these nodes can all reach A.
+   Node C does not have any adjacent nodes, so it is not possible to reach A from C.
+
+3. In Figure 10.4, the shortest path from Philadelphia to Chicago is:
+     Philadelphia --> Pittsburgh --> Columbus --> Indianapolis --> Chicago
+   with a weight of 320 + 180 + 180 + 180 = 860
+   
+---------------------------------
+10.2
+
+Self-Check
+
+1. new Edge(9, 10);
+   new Edge(9, 11);
+   new Edge(9, 12);
+   new Edge(10, 9);
+   new Edge(11, 9);
+   new Edge(11, 12);
+   new Edge(12, 9);
+   new Edge(12, 11);
+   
+Programming
+
+1. Check

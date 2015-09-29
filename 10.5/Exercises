@@ -1,0 +1,49 @@
+Self-Check
+
+1. Depth-First Search Tree:   (Calculus 1)
+					/			   |			\
+			(Calculus 2)       (CIS 067)--|  (CIS 066)
+						/			 |	  ---------------------------------->(CIS 166)
+					(CIS 072)      (CIS 068)----------------------V	
+					/				|		 \					(CIS 223)					
+				(200 L. E.)     (Theory C.)   (CIS 207)				(CIS 338)
+											/	|		\				(CIS 339)
+					   		      (300 L. E.) (CIS 307) (Comm. E.)
+
+Topological Sort:
+Calculus 1
+CIS 066
+CIS 067
+CIS 166
+CIS 068
+CIS 223
+CIS 338
+CIS 339
+CIS 207
+Communications Elective
+CIS 307
+300 Level Elective
+Theory Course
+CIS 072
+200 Level Elective
+Calculus 2
+
+2. Alternate Topological Sort:
+Calculus 1
+Calculus 2
+CIS 067
+CIS 066
+CIS 072
+CIS 068
+Theory Course
+CIS 207
+200 Level Elective
+CIS 166
+CIS 223
+Communications Elective
+CIS 307
+300 Level Elective
+CIS 338
+CIS 339
+
+

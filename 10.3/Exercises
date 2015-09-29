@@ -1,0 +1,72 @@
+Self-Check
+
+1. First graph:
+	0: [1, 3, 4, 5]
+	1: [0, 2, 3, 4, 6]
+	2: [1, 3, 5, 6]
+	3: [0, 1, 2, 4, 5, 6]
+	4: [0, 1, 3, 5]
+	5: [0, 2, 3, 4, 6]
+	6: [1, 2, 3, 5]
+
+   Second graph:
+	0: [1, 4]
+	1: [0, 2, 3]
+	2: [1, 6]
+	3: [1, 5]
+	4: [0]
+	5: [3]
+	6: [2]
+
+2. First graph:
+
+	_|0|1|2|3|4|5|6|_
+	0|F T F T T T F|_
+	1|T F T T T F T|_
+	2|F T F T F T T|_
+	3|T T T F T T T|_
+	4|T T F T F T F|_
+	5|T F T T T F T|_
+	6|F T T T F T F|
+	 
+   Second graph:
+   
+    _|0|1|2|3|4|5|6|_
+	0|F t F F t F F|_
+	1|t F t t F F F|_
+	2|F t F F F F t|_
+	3|F t F F F t F|_
+	4|t F F F F F F|_
+	5|F F F t F F F|_
+	6|F F t F F F F|
+
+3. First graph:
+	|V| = 7
+	|E| = 32
+	density = 0.65 (32/49)
+	For the first graph, because the density is more than 0.25, 
+	based on storage efficiency we can conclude that an
+	adjacency matrix representation would be more efficient.
+	
+   Second graph:
+   |V| = 7
+   |E| = 12 
+   density = 0.25 (12/49)
+   For the second graph, because the density is about 0.25,
+   either representation may be an appropriate representation.
+   When not rounded, the density is less than 0.25, 
+   suggesting an adjacency list representation may be more appropriate.
+
+Programming
+
+1. Check
+
+
+
+
+
+
+
+
+
+	
