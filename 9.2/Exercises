@@ -1,0 +1,52 @@
+Self-Check
+
+1.    1: brown								Nothing added
+ 0: The		 -1: quick
+ 		  0: fox
+___________________________
+	  		0: brown						"apple" added
+1: The					-1: quick
+	0: apple		0: fox
+___________________________
+	  		0: brown						"cat" added
+1: The					 0: fox
+	0: apple		0: cat    0: quick
+___________________________		
+	  		1: brown						"hat" added
+1: The					 1: fox
+	0: apple		0: cat    -1: quick
+							0: hat
+___________________________
+
+2. If we only rotated right, the AVL Tree from 9.11 would look like this:
+					(25)+2
+			/a\			     (50)-1	
+						/b\			/c\
+					   /___\	
+
+	If we simply rotate right, then the balance of node 50 becomes (k - (k + 1)) = -1,
+	and the balance of node 25 becomes (((k + 1) + 1) - (k)) = +2. Without re-balancing
+	the left subtree first, just rotating right has caused the tree to become critically
+	unbalanced on the right side instead of the left.
+
+
+3. The given AVL Tree would look like this:
+					1: 30
+		1: 15				  	 0: 80
+			0: 25		0:70			-1: 90
+					0: 40	0: 72	  0: 85
+___________________________
+
+4. The AVL Tree from this sentence would look like this:
+					1: for
+	   -1: all						1: men
+1: Now		  0: come	  -1: is			-1: time
+	0: aid			    0: good  		0: party	 0: to
+									0: of    0: the
+					  	  
+
+Programming
+
+1. Check
+2. Check
+3. Check

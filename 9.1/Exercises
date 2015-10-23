@@ -1,0 +1,27 @@
+Self-Check
+
+1. 			Now
+				 is
+		for				the
+	all		good	men		time
+aid	  come			  of		 to
+						party
+
+The height of this tree is 6, which is one and a half times 4.
+
+2. Here is one possible binary search tree with the same words, with a height of 4:
+ 						is
+		come						party
+	aid		for					of		  time
+Now	  all		good		men			the   to
+
+3. Algorithm for Rotation Left
+	1. Remember the value of root.right (temp = root.right)
+	2. Set root.right to the value of temp.left
+	3. Set temp.left to root
+	4. Set root to temp
+_______________________________
+
+Programming
+
+1. Check

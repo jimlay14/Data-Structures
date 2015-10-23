@@ -1,0 +1,42 @@
+Self-Check
+
+1.			Black: brown					Nothing added
+	Black: the		  Black: quick
+				   Red: fox
+___________________________________
+
+			Black: brown					"apple" added
+	/Black: the		  \Black: quick
+	   \Red: apple	 /Red: fox
+___________________________________
+
+			Black: brown						"cat" added
+	/Black: the		  \Black: fox
+	   \Red: apple	 /Red: cat   \Red: quick
+___________________________________
+
+			Black: brown						"hat" added
+	/Black: the		  \Red: fox
+	   \Red: apple	 /Black: cat   \Black: quick
+	   							  /Red: hat
+___________________________________
+
+2. The tree in Figure 9.21 would look like this after the insertion of 6, 3, and 0:
+					  Black: 7
+			Red: 2			  	Red: 11
+	Black: 1	 Black: 5	Black: 8	Black: 14
+Red: 0		  /Red: 3  \Red: 6
+
+3. The tree from the given sentence would look like this:
+									Black: is
+				/Black: all							\Black: time
+	/Black: Now		   \Black: for				/Red: of		\Black: to
+		\Red: aid  /Red: come \Red: good	 /Black: men \Black: the
+														 /Red: party
+
+	This tree is not the same as the equivalent AVL tree.
+
+
+Programming
+
+1. Check
